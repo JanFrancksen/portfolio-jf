@@ -8,10 +8,12 @@ import { Image } from "@astrojs/image/components";
 <section
   class="gradient h-screen w-screen flex relative items-center justify-center gap-y-40 flex-col"
 >
-  <div class="flex gap-x-8 items-center justify-center">
+  <div class="flex gap-8 items-center justify-center max-md:flex-col">
     <Image src={Logo} alt="" width={160} height={260} quality="100" />
     <div>
-      <h1 class="text-6xl font-extrabold text-white text-center uppercase">
+      <h1
+        class="sm:text-6xl text-5xl font-extrabold text-white text-center uppercase"
+      >
         Jan Francksen
       </h1>
       <div class="bg-white mix-blend-screen font-bold px-2 text-black">
