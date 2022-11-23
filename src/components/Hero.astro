@@ -1,0 +1,50 @@
+---
+import img from "../../public/jan_1.png";
+import { Icon } from "astro-icon";
+import Logo from "../../public/LogoJF.png";
+import { Image } from "@astrojs/image/components";
+---
+
+<section
+  class="gradient h-screen w-screen flex relative items-center justify-center gap-y-40 flex-col"
+>
+  <div class="flex gap-x-8 items-center justify-center">
+    <Image src={Logo} alt="" width={160} height={260} quality="100" />
+    <div>
+      <h1 class="text-6xl font-extrabold text-white text-center uppercase">
+        Jan Francksen
+      </h1>
+      <div class="bg-white mix-blend-screen font-bold px-2 text-black">
+        Frontend-Developer & UI/UX-Designer
+      </div>
+    </div>
+  </div>
+  <div class="flex gap-x-4">
+    <a
+      href="tel:015259599174"
+      class="text-white flex font-bold hover:text-gray-200"
+    >
+      <Icon name="fa:phone" class="w-4 h-6 mr-2" /> 015259599174
+    </a>
+    <a
+      href="mailto:jan.francksen@web.de"
+      class="text-white flex font-bold hover:text-gray-200"
+    >
+      <Icon name="fa:envelope" class="w-4 h-6 mr-2" /> jan.francksen@web.de
+    </a>
+    <a
+      href="https://github.com/JanFrancksen"
+      class="text-white flex font-bold hover:text-gray-200"
+    >
+      <Icon name="fa:github" class="w-4 h-6 mr-2" />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/jan-francksen-8a7124258/"
+      class="text-white flex font-bold hover:text-gray-200"
+    >
+      <Icon name="fa:linkedin" class="w-4 h-6 mr-2" />
+    </a>
+  </div>
+
+  <!--<Image src={img} alt="" width={600} class="" />-->
+</section>

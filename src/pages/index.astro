@@ -1,0 +1,21 @@
+---
+import Card from "../components/Card.astro";
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Jan Francksen | Frontend-Developer & UI/UX-Designer">
+  <main>
+    <Hero />
+    <section class="w-5/6 mx-auto grid grid-cols-3 gap-8 my-20">
+      <h2 class="font-bold text-5xl col-span-3">Mein Stack</h2>
+
+      <Card href="#" title="NextJS" body="JS" />
+      <Card href="#" title="Tailwind CSS" body="CSS Framework" />
+      <Card href="#" title="Typescript" body="Testest" />
+      <Card href="#" title="Gatsby" body="Testest" />
+      <Card href="#" title="Prisma" body="Testest" />
+      <Card href="#" title="Test" body="Testest" />
+    </section>
+  </main>
+</Layout>
