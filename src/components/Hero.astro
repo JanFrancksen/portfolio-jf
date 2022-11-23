@@ -6,9 +6,11 @@ import { Image } from "@astrojs/image/components";
 ---
 
 <section
-  class="gradient h-screen w-screen flex relative items-center justify-center gap-y-40 flex-col"
+  class="gradient h-screen w-screen flex relative items-center justify-center sm:gap-y-40 gap-y-8 flex-col"
 >
-  <div class="flex gap-8 items-center justify-center max-md:flex-col">
+  <div
+    class="flex gap-8 items-center justify-center max-md:flex-col max-sm:w-[90vw]"
+  >
     <Image src={Logo} alt="" width={160} height={260} quality="100" />
     <div>
       <h1
@@ -21,7 +23,7 @@ import { Image } from "@astrojs/image/components";
       </div>
     </div>
   </div>
-  <div class="flex gap-x-4">
+  <div class="flex gap-x-4 max-sm:flex-col max-sm:items-center">
     <a
       href="tel:015259599174"
       class="text-white flex font-bold hover:text-gray-200"
